@@ -1,6 +1,9 @@
         public void CaminhoPastaExisteOuCria(string pasta) {
 
             var caminho = "C:\PASTAB" + pasta;
+            // Ou 
+            //var caminho = Path.Combine("C:\PASTAB", pasta);
+     
 
             if (!Directory.Exists(caminho)) {                
                 Directory.CreateDirectory(caminho);
